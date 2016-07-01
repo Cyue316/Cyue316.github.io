@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="/JacksonYi/prd/styles/usage/app@e5558cb82a2a1f2eee670e3ab77a0350.css">
   <script type="text/javascript">
     document.ontouchmove = function(e){
-      if(e.tarfet.tafName.toUpperCase() !== 'IFRAME'){
+      if(e.target.tagName.toUpperCase() !== 'IFRAME'){
         e.preventDefault();
       }
     };
