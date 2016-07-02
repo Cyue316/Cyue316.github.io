@@ -1,0 +1,60 @@
+.index{
+  .container{
+    .message{
+      @include flexbox();
+      @include flex-direction(column);
+      background-color: #F6F6F6;
+      height:100%;
+      > *{
+        width:100%;
+      }
+      header{
+        height: .47rem;
+        background:#cd0002;
+        color: #fff;
+        p{
+          height: .47rem;
+          font-size: .18rem;
+          text-align: center;
+          line-height: .47rem;
+          font-weight: bold;
+        }
+
+      }
+      section{
+        @include flex(1);
+        width: 100%;
+        ul{
+          li{
+            padding:0.08rem;
+            @include border(0 0 1px 0,#D8D8D8);
+            @include flexbox();
+            div:nth-child(1){
+              width: 0.45rem;
+              height:0.45rem;
+              img{
+                width: 100%;
+              }
+            }
+            div:nth-child(2){
+              @include flex(1);
+              font-size: .15rem;
+              color: #2E2E2E;
+              margin-left:.17rem;
+              line-height: 0.45rem;
+            }
+            div:nth-child(3){
+              width:.08rem;
+              font-size: .08rem;
+              color:#D6CEC8;
+              font-weight:bold;
+              @include flexbox();
+              @include align-items(center);
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

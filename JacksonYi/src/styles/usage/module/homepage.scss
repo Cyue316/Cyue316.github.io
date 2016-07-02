@@ -1,0 +1,139 @@
+.homepage{
+  @include flexbox();
+  @include flex-direction(column);
+  background-color: #F6F6F6;
+  height:100%;
+  > *{
+    width:100%;
+  }
+  header{
+    height: .44rem;
+    background:#cd0002;
+    @include flexbox();
+    color: #fff;
+    div{
+      height: .44rem;
+      text-align: center;
+      line-height: .44rem;
+    }
+    div:first-child{
+      width: .44rem;
+      font-size: .22rem;
+    }
+    div:nth-child(2){
+      @include flex(1);
+      height: 100%;
+      text-align: center;
+      line-height: .44rem;
+      font-size: .19rem;
+      font-weight: bold;
+    }
+    div:last-child{
+      width: .64rem;
+      font-size: .13rem;
+    }
+  }
+
+  section{
+    @include flex(1);
+    width: 100%;
+    ul:first-child{
+      width: 100%;
+      height: .89rem;
+      background:#fff;
+      padding:.12rem 0;
+      margin:.16rem 0 .21rem;
+      @include flexbox();
+      div:nth-child(1){
+        width:.82rem;
+        @include flexbox();
+        @include align-items(center);
+        @include justify-content(center);
+        p{
+          width: .65rem;
+          height: .65rem;
+          img{
+            width: 100%;
+          }
+        }
+      }
+      div:nth-child(2){
+        padding:.12rem 0 .12rem .07rem;
+        @include flex(1);
+        @include flexbox();
+        @include flex-direction(column);
+        p{
+          @include flex(1);
+          width: 100%;
+        }
+        p:nth-child(1){
+          font-size: .15rem;
+          color: #2E2E2E;
+          font-weight: bold;
+        }
+        p:nth-child(2){
+          font-size:.10rem;
+          color:#B3B3B3;
+          span:nth-child(1){
+            margin-right: .1rem;
+          }
+        }
+        p:nth-child(3){
+          font-size:.10rem;
+          color:#CC9743;
+        }
+
+      }
+    }
+    ul:not(:nth-child(1)){
+      margin-bottom: .1rem;
+      li{
+        width: 100%;
+        height: .44rem;
+        background: #fff;
+        @include border(0 0 1px 0,#D8D8D8);
+        @include flexbox();
+        div{
+          width: .56rem;
+          height: 100%;
+          @include flexbox();
+          @include align-items(center);
+          @include justify-content(center);
+          > p{
+            width: .22rem ;
+            height: .22rem;
+            img{
+              width: 100%;
+              //height: 100%;
+            }
+          }
+        }
+        > p{//弹性和会影响---家>
+          @include flex(1);
+          height:100%;
+          line-height: .4rem;
+          font-size: .15rem;
+          font-family: "微软雅黑";
+          color:#333;
+        }
+        i{
+          width: .38rem;
+          height: 100%;
+          font-size: .14rem;
+          color:#D6CEC8;
+          font-weight: 100;
+          @include flexbox();
+          @include align-items(center);
+          @include justify-content(center);
+        }
+      }
+    }
+    h4{
+      width:100%;
+      height: .5rem;
+    }
+
+
+  }
+
+}

@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+@import "../lib/core/reset";
+@import "./core/common";//可以省略后缀名
+@import "./core/swiper-3.3.1.min.css";
+// @import "./core/animate.min.css";
+
+// layout
+
+spa-app {
+    position: absolute;
+    overflow: hidden;
+}
+
+spa-view {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #eceef0 !important;
+    @include flexbox(flex);
+    @include flex-direction(column);
+}
+
+// Views
+@import "./module/setting";
+@import "./module/homepage";
+@import "./module/community";
+@import "./module/login";
+@import "./module/message";
+@import "./module/find";
+@import "./module/home";
+@import "./module/index";

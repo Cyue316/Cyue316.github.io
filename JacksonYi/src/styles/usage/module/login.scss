@@ -1,0 +1,126 @@
+.login{
+  @include flexbox();
+  @include flex-direction(column);
+  background-color: #F6F6F6;
+  height:100%;
+  > *{
+    width:100%;
+  }
+  header{
+    height: .44rem;
+    background:#cd0002;
+    @include flexbox();
+    color: #fff;
+    p{
+      height: .44rem;
+      text-align: center;
+      line-height: .44rem;
+    }
+    p:first-child{
+      width: .44rem;
+      font-size: .22rem;
+    }
+    p:nth-child(2){
+      @include flex(1);
+      height: 100%;
+    }
+    p:last-child{
+      width: .45rem;
+      font-size: .14rem;
+    }
+  }
+  section{
+    width: 100%;
+    text-align: center;
+    input,button{
+      outline:none;
+      border:0;
+    }
+
+      #user,#passWord{
+        width: 86.5%;
+        height: .43rem;
+        margin-top: .15rem;
+        padding-left:.1rem;
+        border: 1px solid #aaa;
+        color: #C7C7CD;
+        font-size: .14rem;
+//          @include border(1px 1px 1px 1px,red,solid);
+        @include border-radius(.05rem);
+      }
+      p{
+        width:87.5%;
+        height: .3rem;
+        font-weight: bold;
+        text-align: right;
+        padding-top: .05rem;
+        a{
+          color: #54B3FA;
+
+        }
+      }
+
+      #sub{
+        width: 87.5%;
+        height: .35rem;
+        background: #0091FE;
+        color: #fff;
+        font-size: .15rem;
+        text-align: center;
+        line-height: .35rem;
+        font-weight: bold;
+        @include border-radius(.05rem);
+      }
+
+      ul{
+        width:87.5%;
+        height: .3rem;
+        margin:.2rem auto .2rem;
+        @include flexbox();
+        li{
+          @include flex(1);
+          height: 100%;
+          @include flexbox();
+          @include align-items(center);
+          @include justify-content(center);
+          input{
+            width: 1rem;
+            background: #0091FE;
+            @include border-radius(.03rem);
+            color: #fff;
+            font-size: .15rem;
+            line-height: .3rem;
+            font-weight: bold;
+          }
+        }
+
+
+      }
+
+
+      fieldset{
+        // @include border(1px);
+        width: 87.5%;
+        border-top:solid 1px #ccc;
+        font-size: .12rem;
+        margin: 0 auto;
+      }
+
+      #QQlogin{
+        width:1.93rem;
+        height: .42rem;
+        border:1px solid #ddd;
+        margin-top: .23rem;
+        font-size: .16rem;
+        font-weight: bold;
+        color: #0091FD;
+        text-align: center;
+        background:#fff url(/JacksonYi/images/login_qq_icon.png) no-repeat .2rem top;
+        @include border-radius(.04rem);
+      }
+
+
+    }
+
+
+}

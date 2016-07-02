@@ -1,0 +1,36 @@
+<div class="message">
+  <header>
+    <p>消息</p>
+  </header>
+  <section>
+    <ul>
+      <li>
+        <div>
+          <img src="/JacksonYi/images/messageicon1.png" alt="" />
+        </div>
+        <div>提到我的</div>
+        <div>
+           <i class="yo-ico">&#xe775;</i>
+        </div>
+      </li>
+      <li>
+        <div>
+          <img src="/JacksonYi/images/messageicon2.png" alt="" />
+        </div>
+        <div>评论</div>
+        <div>
+           <i class="yo-ico">&#xe775;</i>
+        </div>
+      </li>
+      <li>
+        <div>
+          <img src="/JacksonYi/images/messageicon3.png" alt="" />
+        </div>
+        <div>好友申请</div>
+        <div>
+           <i class="yo-ico">&#xe775;</i>
+        </div>
+      </li>
+    </ul>
+  </section>
+</div>
